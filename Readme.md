@@ -23,5 +23,7 @@ HTML
 <!--<![endif]-->
 ```
 
+All of these techniques put the 'fallback' or code that is not interactive before the interactive section. This is deliberate, as some interactive elements can add a lot of code and as email developers we need to consider <a href="https://github.com/hteumeuleu/email-bugs/issues/41">Gmail's 100kb(ish) limit</a>. Another Gmail limitation is the size of the `<style>` tag in the head, which needs to be kept to <a href="https://github.com/hteumeuleu/email-bugs/issues/90">16kb</a>.
+
 ## 2. Full interactive elements
 The second type of file will be full interactive modules, with all the CSS and HTML needed to implement in your emails.
