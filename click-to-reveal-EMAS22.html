@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+    <meta name="x-apple-disable-message-reformatting" />
+    <!--Built at EMAS by Jay Oram - @ActionRocket -->
+    <title>Click to reveal</title>
+
+<style>
+@media screen {
+  .clickme {display:block!important}
+  .reveal{display:none}
+input:checked ~ .reveal {display: block;}
+input:checked ~ .clickme {display:none!important}
+u+.body .clickme {display:none!important}
+u+.body .reveal {display:block}
+}
+
+</style>
+
+  </head>
+  <body style="margin:0!important; padding:0!important; width:100%!important;" class="body">
+
+<table cellpadding="0" cellspacing="0" border="0" role="none" width="100%">
+
+<tr>
+  <td align="center" style="padding-top:50px;">
+
+<label>
+  <!--[if !mso]><!-->
+  <input type="checkbox" style="display:none">
+  <div class="clickme" style="display:none">Click me</div>
+   <!--<![endif]-->
+   <div class="reveal">reveal/fallback</div>
+</label>
+
+  </td>
+</tr>
+
+</table>
+
+  </body>
+</html>
