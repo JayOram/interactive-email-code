@@ -27,3 +27,5 @@ All of these techniques put the 'fallback' or code that is not interactive befor
 
 ## 2. Full interactive elements
 The second type of file will be full interactive modules, with all the CSS and HTML needed to implement in your emails.
+
+<a href="https://github.com/JayOram/interactive-email-code/blob/main/click-to-reveal-EMAS22.html">Click to reveal</a> - Live coded at EMAS 2022
