@@ -25,7 +25,34 @@ HTML
 
 All of these techniques put the 'fallback' or code that is not interactive before the interactive section. This is deliberate, as some interactive elements can add a lot of code and as email developers we need to consider <a href="https://github.com/hteumeuleu/email-bugs/issues/41">Gmail's 100kb(ish) limit</a>. Another Gmail limitation is the size of the `<style>` tag in the head, which needs to be kept to <a href="https://github.com/hteumeuleu/email-bugs/issues/90">16kb</a>.
 
-## 2. Full interactive elements
+## 2. Accessiblity
+
+After chatting to a lot of email developers, they are rightly concerned about accessibility. One way is to hide all interactive elements for screen readers and other assistive technology.
+
+For checkboxes to add Keyboard use:
+
+```
+.checkbox {
+  display: inline-block !important;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+  margin: 0 0 0 -9999px;
+  float: left;
+  position: absolute;
+  -webkit-appearance: none;
+  }
+input:focus ~ .clickme,
+input:focus ~ .reveal{
+  outline: Highlight auto 2px;
+  outline: -webkit-focus-ring-color auto 5px;
+  }
+```
+
+Thanks to Mark Robbins for the #a11y info!
+
+## 3. Full interactive elements
 The second type of file will be full interactive modules, with all the CSS and HTML needed to implement in your emails.
 
 <a href="https://github.com/JayOram/interactive-email-code/blob/main/click-to-reveal-EMAS22.html">Click to reveal</a> - Live coded at EMAS 2022
