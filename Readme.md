@@ -43,8 +43,8 @@ For checkboxes to add Keyboard use:
   position: absolute;
   -webkit-appearance: none;
   }
-input:focus ~ .clickme,
-input:focus ~ .reveal{
+input:focus-visible ~ .clickme,
+input:focus-visible ~ .reveal{
   outline: Highlight auto 2px;
   outline: -webkit-focus-ring-color auto 5px;
   }
