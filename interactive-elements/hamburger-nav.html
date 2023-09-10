@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+  </head>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+
+
+    <!--Built in London by the ActionRocket team - @ActionRocket -->
+    <title>Hamburger nav</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      table {
+        border-collapse: collapse;
+        mso-table-lspace: 0;
+        mso-table-rspace: 0;
+      }
+
+      u+.body a {
+        color: inherit;
+        text-decoration: none;
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+      }
+
+      input {
+        display: none;
+      }
+    </style>
+    <style>
+      div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+      }
+
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      a {
+        color: inherit !important;
+        mso-color-alt: windowtext;
+        text-decoration: none;
+      }
+
+      span.MsoHyperlink {
+        color: inherit !important;
+        mso-style-priority: 99 !important;
+      }
+
+      span.MsoHyperlinkFollowed {
+        color: inherit !important;
+        mso-style-priority: 99 !important;
+      }
+    </style>
+
+    
+
+    <!-- Mobile changes -->
+    <style>
+      @media screen and (max-width:600px) {
+        .w100pc {
+          width: 100% !important;
+          min-width: 100% !important;
+          max-width: 1000px !important;
+          height: auto !important;
+        }
+ 
+        .show {
+          display: block !important;
+        }
+        
+        .nomob {
+          display: none !important;
+        }
+
+        #MessageViewBody,
+        #MessageWebViewDiv {
+          width: 100% !important;
+        }
+      }
+    </style>
+
+
+    <!-- Navigation CSS -->
+    <style>
+      @supports(--css: variables) {
+        .showmenu {
+          display: block !important;
+        }
+        .menupad {
+          padding-top: 0 !important;
+          padding-bottom: 6px;
+        }
+      }
+
+      .menutray {
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease;
+      }
+
+      .& .menutray {
+        display: none;
+      }
+
+      .menuitem {
+        padding: 16px 30px;
+        border-bottom: 1px solid #E3E5E8;
+        width: 100%;
+      }
+
+      .menuitem a {
+        color: #393A3D;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 18px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 600;
+      }
+
+      #menuToggle {
+        position: relative;
+        right: 0px;
+      }
+
+      #menuToggle span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #393A3D;
+        border-radius: 8px;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+      }
+
+      #menuToggle .top {
+        transform-origin: 0% 0%;
+      }
+
+      #menuToggle .bottom {
+        transform-origin: 0% 100%;
+      }
+
+      #menu:checked~* .top {
+        transform: rotate(45deg) translate(-2px, -3px);
+      }
+
+      #menu:checked~* .middle {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+      }
+
+      #menu:checked~* .bottom {
+        transform: rotate(-45deg);
+      }
+
+      #menu:checked~* .menutray {
+        height: 208px;
+      }
+
+      #menu:checked~* .logonav {
+        border-bottom: 2px solid #CBCBCB;
+      }
+
+      @media screen and (max-width: 600px) {
+        .menulogo {
+          padding-bottom: 20px !important;
+          text-align: left;
+        }
+
+        .border-bottom {
+          border-bottom: 1px solid #E3E5E8
+        }
+      }
+    </style>
+    <style>
+      u+.body .menutray {
+        display: none;
+      }
+    </style>
+
+    <!-- Dark mode CSS -->
+    <style>
+      :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        #menuToggle span {
+          background: #fff;
+        }
+
+        .lightimage {
+          display: none !important;
+        }
+
+        .darkimage {
+          display: block !important;
+        }
+
+        .darkimage-inline {
+          display: inline-block !important;
+        }
+
+        td,
+        th {
+          background-color: rgb(21, 19, 18) !important;
+        }
+
+        * {
+          color: rgb(255, 255, 255) !important;
+        }
+
+        .button {
+          background-color: #6d6d6d !important;
+          background-image: linear-gradient(rgb(109, 109, 109), rgb(109, 109, 109)) !important;
+          border-color: #6d6d6d !important;
+        }
+
+        .transparent {
+          background-color: transparent !important;
+        }
+
+        .hidebg {
+          background-image: none !important;
+        }
+      }
+
+      [data-ogsb] #menuToggle span {
+        background: #fff;
+      }
+
+      [data-ogsc] .lightimage {
+        display: none !important;
+      }
+
+      [data-ogsc] .darkimage {
+        display: block !important;
+      }
+
+      [data-ogsb] td,
+      [data-ogsb] th {
+        background-color: rgb(21, 19, 18) !important;
+      }
+
+      [data-ogsb] {
+        color: rgb(255, 255, 255) !important;
+      }
+
+      [data-ogsb] .button {
+        background-color: #6d6d6d !important;
+        background-image: linear-gradient(rgb(109, 109, 109), rgb(109, 109, 109)) !important;
+        border-color: #6d6d6d !important;
+      }
+
+      [data-ogsb] .transparent {
+        background-color: transparent !important;
+      }
+
+      [data-ogsb] .hidebg {
+        background-image: none !important;
+      }
+    </style>
+
+    <!--[if mso]>
+    <noscript>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    </noscript>
+    <![endif]-->
+  </head>
+  <body class="body" xml:lang="en">
+    <div role="article" aria-roledescription="email" aria-label="subject or email title" lang="en" dir="ltr">
+
+      <!-- Header -->
+      <!--[if !mso]><!-- --><input type="checkbox" id="menu" style="display: none;" class="checkbox"><!--<![endif]-->
+      <table border="0" cellpadding="0" cellspacing="0" role="none" width="100%">
+        <tr>
+          <td align="center">
+            <table border="0" cellpadding="0" cellspacing="0" role="none" style="width: 600px;background-color: #fff;" class="w100pc">
+              <tr>
+                <td align="center" style="padding-top: 30px;">
+                  <table border="0" cellpadding="0" cellspacing="0" role="none" width="100%">
+                    <tr>
+                      <td style="padding: 0 30px;" class="border-bottom">
+                        <table border="0" cellpadding="0" cellspacing="0" role="none" width="100%">
+                          <tr>
+                            <td align="center" style="padding-bottom: 30px;" class="menulogo">
+                              <a href="https://www.example.com">
+                                <img src="https://arcdn.net/ActionRocket/lessons-in-email/litmus-logo.png" alt="Litmus" width="40" style="display:inline-block;height: auto" class="lightimage">
+                                <!--[if !mso]><!---->
+                                <img src="https://arcdn.net/ActionRocket/lessons-in-email/litmus-logo-dm.png" alt="Litmus" width="40" style="display:none;" class="darkimage-inline">
+                                <!--<![endif]-->
+                              </a>
+                            </td>
+                            <td align="right" style="padding-top:5px;display: none;" class="show menupad">
+                              <!--[if !mso]><!-- -->
+                              <div class="showmenu" style="display: none;">
+                                <label for="menu" id="menuToggle">
+                                  <div style="padding: 10px 0 5px;width: 63px;border-radius: 5px;" class="menubg"> <span class="top"></span> <span class="middle"></span> <span class="bottom"></span></div>
+                                </label>
+                              </div>
+                               <!--<![endif]-->                         
+                              </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table border="0" cellpadding="0" cellspacing="0" role="none" width="100%">
+                    <tr>
+                      <td><!--[if !mso]><!-- -->
+                        <div class="menutray">
+                          <div class="menuitem" style="color:#0077C5;"><a href="https://www.example.com" style="color:#0077C5;">Link1</a></div>
+                          <div class="menuitem"><a href="https://www.example.com">Link2</a></div>
+                          <div class="menuitem"><a href="https://www.example.com">Link3</a></div>
+                          <div class="menuitem"><a href="https://www.example.com">Link4</a></div>
+                        </div>
+                      <!--<![endif]--></td>
+                    </tr>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" role="none" width="100%" class="nomob">
+                    <tr>
+                      <td align="center" style="padding: 0 30px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="none" width="100%">
+                          <tr>
+                            <td style="color: #393A3D; text-align: center"><a href="https://www.example.com" style="color:#393A3D; text-decoration: none;font-size: 14px; line-height: 18px; font-family: Helvetica, Arial, sans-serif;font-weight: 600;">Link1</a></td>
+                            <td style="color: #393A3D; text-align: center"><a href="https://www.example.com" style="color:#393A3D; text-decoration: none;font-size: 14px; line-height: 18px; font-family: Helvetica, Arial, sans-serif;font-weight: 600;">Link2</a></td>
+                            <td style="color: #393A3D; text-align: center"><a href="https://www.example.com" style="color:#393A3D; text-decoration: none;font-size: 14px; line-height: 18px; font-family: Helvetica, Arial, sans-serif;font-weight: 600;">Link3</a></td>
+                            <td style="color: #0077C5; text-align: center"><a href="https://www.example.com" style="color:#0077C5; text-decoration: none;font-size: 14px; line-height: 18px; font-family: Helvetica, Arial, sans-serif;font-weight: 600;">Link4</a></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+
+     
+
+
+    </div>
+  </body>
+</html>
