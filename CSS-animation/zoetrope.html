@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+<meta name="x-apple-disable-message-reformating" />
+<!--Built in London by the ActionRocket team - @ActionRocket -->
+<title>Zoetrope</title>
+<style>
+
+/* 
+
+.animate {
+
+Width of one frame
+	width: 330px;
+
+Height of image   
+	height: 314px;
+
+Set strip horizontally and add as background image - you can use: https://ezgif.com/gif-to-sprite
+  background: url(https://cdn.braze.eu/appboy/communication/assets/image_assets/images/61dd84139b94d56e420c2db4/original.png?1641907219);
+
+animation: [name of animation] [duration of animation] steps([number of frames minus 1]);
+
+[duration of animation] - the easiest thing to do is create the gif with consistent seconds per frame.
+In this example - each frame was set 0.1s - Total = 0.8s
+  		animation: sprite 0.8s steps(7);
+
+Set the animation to finish at the end of the keyframe    
+			animation-fill-mode: forwards;
+		}
+
+@keyframes [name of animation] {...}
+    @keyframes sprite {
+
+The background-position is the full width of the image with all frames minus 1 frame width.      
+  to { background-position: -2310px; }
+}
+
+*/
+
+  .animate {
+			width: 330px;
+			height: 314px;
+      background: url(https://cdn.braze.eu/appboy/communication/assets/image_assets/images/61dd84139b94d56e420c2db4/original.png?1641907219);
+  		animation: sprite 0.8s steps(7);
+			animation-fill-mode: forwards;
+		}
+    @keyframes sprite {
+  to { background-position: -2310px; }
+}
+@supports(--css: variables) {
+				.fallback{display:none;}
+        .animate {display: block!important;}
+        }
+  </style>
+
+</head>
+<body>
+ 
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:100%">
+  <tr>
+    <td>
+      <img src="https://media4.giphy.com/media/kkYbDLFmNvO4E/giphy.gif?cid=ecf05e47xweb4anwzqjy2gb86rpumawq6he2xpiep7mwbolz&rid=giphy.gif&ct=g" alt="Gif fallback" class="fallback">
+      <div class="animate" style="display:none;"></div>
+    </td>
+  </tr>
+</table> 
+
+
+ </body>
+ </html> 
