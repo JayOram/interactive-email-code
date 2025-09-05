@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+      <meta name="x-apple-disable-message-reformatting" />
+      <!--FUNdamentals of interactive code - Jay Oram - @ActionRocket / @lessonsinemail -->
+      <title>For attribute</title>
+      <style>
+        .checkboxsupported:checked ~* .interactive {display:block!important}
+        .checkboxsupported:checked ~* .reveal {display:none}
+        input {display: none}
+         #special:checked ~* .reveal {
+            display: block;
+         }
+          #special:checked ~* .interactive {
+            display: none !important;
+         }
+      </style>
+   </head>
+   <body class="body">
+     <!--[if !mso]><!-->
+      <input type="checkbox" class="checkboxsupported" checked>
+      <input type="checkbox" id="special">
+     <!--<![endif]-->
+      <table cellpadding="0" cellspacing="0" border="0" role="none" width="100%">
+         <tr>
+            <td align="center">
+              <!--[if !mso]><!-->
+              <div class="interactive" style="display: none">
+               <label for="special">
+                  <div>Click me</div>
+               </label>
+                </div>
+              <!--<![endif]-->
+              <div class="reveal">reveal/fallback</div>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>
