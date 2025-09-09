@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+      <meta name="x-apple-disable-message-reformatting" />
+      <!--FUNdamentals of interactive code - Jay Oram - @ActionRocket / @lessonsinemail -->
+      <title>Chaining selectors</title>
+      <style>
+          label {
+              display: block;
+              width: 200px;
+              padding: 10px;
+              border: solid 1px black;
+              margin: 20px;
+          }
+        .checkboxsupported:checked ~* .interactive {display:block!important}
+        .checkboxsupported:checked ~* .reveal {display:none}
+        #answer-a:checked ~ #answer-b:checked ~ .reveal {
+          display: block;
+        }
+          
+          #answer-a:checked ~* .a, #answer-b:checked ~* .b  {
+              border: dashed 1px rebeccapurple;
+          }
+          
+      </style>
+   </head>
+   <body class="body">
+     <!--[if !mso]><!-->
+      <input type="checkbox" class="checkboxsupported" checked style="display:none">
+     <!--<![endif]-->
+      <table cellpadding="0" cellspacing="0" border="0" role="none" width="100%">
+         <tr>
+            <td align="center">
+                <input type="checkbox" id="answer-a">
+                <input type="checkbox" id="answer-b">
+              <!--[if !mso]><!-->
+              <div class="interactive" style="display: none">
+               <h1>Check both answers</h1>      
+               <label for="answer-a" class="a">Answer a</label>
+               <label for="answer-b" class="b">Answer b</label>
+                </div>
+              <!--<![endif]-->
+              <div class="reveal">Tada 🎉</div>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>
